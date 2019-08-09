@@ -1,0 +1,74 @@
+CHARACTERS
+
+1. ^d
+This regex matches a line if it begins with 'd' literal
+
+2  ^\d  
+digit 
+[0-9]
+This regex matches a line if it begins with a digit. 
+
+3. \w 
+word character 
+[A-Za-z0-9_]
+Ex : /\w/.test('*h_')
+1st Match : h
+2nd Match : _
+
+4.\s 
+White space character : Space/Tab/New Line/Carriage Return/Vertical Tab
+Ex : /\s/.test('Hi There')
+1st Match : space between i and T
+
+5. \D
+ONE character that is not a digit
+Ex : 5 matches in Apple.
+
+6. \S
+One Character that is not a whitespace character
+Example :  /^\S/
+if there is a whitespace in the beginning of a string this wont match
+
+QUANTIFIERS
+
+7. + 
+plus quantifier - one and unlimited times
+/\d+/ : Matches one or more digits
+Example : /\d+/.test('12ab34') has two matches 12 and 34 respectively
+
+8. {n}
+Exactly n times
+Example : /\d+/.test('12ab3456') has three matches 12,34,56
+
+9. {m,n}
+m to n times
+Example : /\d{2,4}/.test('12qwe34567') has three matches 12,3456 but not 7
+
+10. {m,}
+m or more times i.e atlest m times
+Example : /\d{3,}/.test('12qwe34567') has three matches 345
+
+11. * zero or more times
+
+12. ? one or more times
+
+MORE CHARACTERS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
