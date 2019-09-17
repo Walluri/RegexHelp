@@ -55,6 +55,9 @@ Example : /\d{3,}/.test('12qwe34567') has three matches 345
 MORE CHARACTERS
 
 
+13. In Linux configuration files print the lines which are configured, as you dont want to see commented lines. 
+ $ cat /etc/elasticsearch/elasticsearch.yml | grep ^[a-z].*
+ 
 
 
 
